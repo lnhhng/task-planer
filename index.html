@@ -2,19 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <header class="header">
-            <ul>
-                <li>Home</li>
-                <li>Make a list</li>
-            </ul>
+        <header>
+            <h1>Task Planner</h1>
+            <p>Organize your tasks and stay productive</p>
         </header>
+        <section>
+            <h2>Add New Task</h2>
+            <div>
+                <h4>Task Title</h4>
+                <!-- Single line box -->
+                <input type="text" placeholder="Type here">
+
+                 <br><br>
+
+            </div>
+            <div>
+                <h4>Category</h4>
+                <select>
+                    <option>Work</option>
+                    <option>Personal</option>
+                    <option>Health</option>
+                    <option>Learning</option>
+                </select>
+                
+            </div>
+            <div>
+                <h4>Priority</h4>
+                <select>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+                
+            </div>
+            <section class="tasks-list-section">
+                <article class="task-item">
+                    <div class="task-left">
+                        <input type="checkbox" class="task-checkbox">
+                        <div class="task-details">
+                            <h3>adfs</h3>
+                            <div class="task-tags">
+                                <span class="tag tag-category">Work</span>
+                                <span class="tag tag-priority-medium">medium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-delete">Delete</button>
+                </article>
+            </section>
+        </section>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+    
